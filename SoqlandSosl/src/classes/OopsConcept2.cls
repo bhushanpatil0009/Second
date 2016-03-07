@@ -1,0 +1,11 @@
+public abstract class OopsConcept2
+{
+
+public abstract void abstractMethod();
+
+public void normalMethod()
+{
+	system.debug('I am in parent class');
+}
+     
+}

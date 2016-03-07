@@ -1,0 +1,23 @@
+trigger Question1Trigger on Employee__c (after insert, after update, before insert, before update)
+{
+	
+	if(trigger.isBefore && trigger.isinsert)
+	{
+	
+	}
+    if(trigger.isBefore && trigger.isupdate)
+	{
+	
+	}
+    
+    if(trigger.isAfter && trigger.isinsert)
+	{
+	
+	}
+    
+    if(trigger.isAfter && trigger.isupdate)
+	{
+	
+	}
+    
+}

@@ -1,0 +1,12 @@
+public class OopsConcept3 extends OopsConcept2
+{
+	public override void abstractMethod()
+	{
+		system.debug(' i am in derived class ');
+	}
+	
+    public void normalMethod1()
+	{
+		system.debug('I am in parent class 2');
+	}
+}
