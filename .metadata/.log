@@ -312,3 +312,395 @@ org.eclipse.core.runtime.AssertionFailedException: null argument:
 !ENTRY com.salesforce.ide.core 2 0 2016-03-07 16:37:12.065
 !MESSAGE  WARN [2016-03-07 16:37:12,065] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
 
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:13:54.731
+!MESSAGE  WARN [2016-03-07 18:13:54,729] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:13:57.309
+!MESSAGE ERROR [2016-03-07 18:13:57,309] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:13:58.889
+!MESSAGE  WARN [2016-03-07 18:13:58,889] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:13:58.914
+!MESSAGE  WARN [2016-03-07 18:13:58,911] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:14:00.275
+!MESSAGE  WARN [2016-03-07 18:14:00,275] (ProjectService.java:handleDeployResult:1917) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:14:00.275
+!MESSAGE  WARN [2016-03-07 18:14:00,275] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:14:00.285
+!MESSAGE  WARN [2016-03-07 18:14:00,285] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:15:55.048
+!MESSAGE  WARN [2016-03-07 18:15:55,047] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:05.083
+!MESSAGE ERROR [2016-03-07 18:16:05,083] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:34) - ForceRemoteException occurred while attempting to perform a metadata operation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:05.093
+!MESSAGE  WARN [2016-03-07 18:16:05,093] (BaseRetryAspect.java:isExceptionRetryable:217) - General evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:05.093
+!MESSAGE ERROR [2016-03-07 18:16:05,093] (PackageManifestFactory.java:createPackageManifest:421) - Generic package manifest created - unable to get enabled object types from username='bhushandevorg@gmail.com', endpoint='https://ap2.salesforce.com/services/Soap/u/36.0/00D28000001Ej5e', orgid='00D28000001Ej5eEAC', conn timeout=400 secs, read timeout=400 secs
+
+!STACK 0
+com.salesforce.ide.core.remote.ForceRemoteException: com.sforce.ws.ConnectionException: Failed to send request to https://ap2.salesforce.com/services/Soap/m/36.0/00D28000001Ej5e
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.throwTranslatedException(ForceExceptionUtils.java:357)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:254)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:261)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$FastClassByCGLIB$$9404e285.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.MetadataOperationsRetryAspect.metadataOperationsRetry(MetadataOperationsRetryAspect.java:32)
+	at sun.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$EnhancerByCGLIB$$227e017e.describeMetadata(<generated>)
+	at com.salesforce.ide.core.services.MetadataService.getDescribeMetadata(MetadataService.java:61)
+	at com.salesforce.ide.core.services.MetadataService.getEnabledComponentTypes(MetadataService.java:150)
+	at com.salesforce.ide.core.services.MetadataService.getEnabledComponentTypes(MetadataService.java:139)
+	at com.salesforce.ide.core.services.MetadataService.getEnabledComponentTypes(MetadataService.java:134)
+	at com.salesforce.ide.core.factories.PackageManifestFactory.createPackageManifest(PackageManifestFactory.java:407)
+	at com.salesforce.ide.core.factories.PackageManifestFactory.getDefaultPackageManifest(PackageManifestFactory.java:182)
+	at com.salesforce.ide.core.factories.PackageManifestFactory.getPackageManifest(PackageManifestFactory.java:157)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrieveSelective(PackageRetrieveService.java:637)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrieveSelective(PackageRetrieveService.java:533)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrieveSelective(PackageRetrieveService.java:514)
+	at com.salesforce.ide.core.services.ProjectService.isFileInSync(ProjectService.java:2584)
+	at com.salesforce.ide.core.services.ProjectService.isResourceInSync(ProjectService.java:2457)
+	at com.salesforce.ide.ui.actions.ActionController$1.run(ActionController.java:242)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: com.sforce.ws.ConnectionException: Failed to send request to https://ap2.salesforce.com/services/Soap/m/36.0/00D28000001Ej5e
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:121)
+	at com.sforce.soap.metadata.MetadataConnection.describeMetadata(MetadataConnection.java:491)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:252)
+	... 34 more
+Caused by: java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	... 36 more
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:05.127
+!MESSAGE  WARN [2016-03-07 18:16:05,126] (ActionController.java:syncCheck:198) - Unable to perform sync check: An unexpected error has occurred. Please try again, or check the log file for details.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:16.499
+!MESSAGE  WARN [2016-03-07 18:16:16,499] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:16.530
+!MESSAGE  WARN [2016-03-07 18:16:16,529] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:26.547
+!MESSAGE ERROR [2016-03-07 18:16:26,547] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:34) - ForceRemoteException occurred while attempting to perform a metadata operation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:26.557
+!MESSAGE  WARN [2016-03-07 18:16:26,547] (BaseRetryAspect.java:isExceptionRetryable:217) - General evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:26.557
+!MESSAGE ERROR [2016-03-07 18:16:26,557] (PackageDeployService.java:deployWork:303) - Unable to retrieve components: UnknownHostException: ap2.salesforce.com
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:26.618
+!MESSAGE ERROR [2016-03-07 18:16:26,617] (SaveToServerHandler.java:fetchRemoteComponents:109) - Unable to save resource(s)
+
+!STACK 0
+java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	at com.sforce.soap.metadata.MetadataConnection.describeMetadata(MetadataConnection.java:491)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:252)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:261)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$FastClassByCGLIB$$9404e285.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.MetadataOperationsRetryAspect.metadataOperationsRetry(MetadataOperationsRetryAspect.java:32)
+	at sun.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$EnhancerByCGLIB$$227e017e.describeMetadata(<generated>)
+	at com.salesforce.ide.core.services.MetadataService.getDescribeMetadata(MetadataService.java:61)
+	at com.salesforce.ide.core.services.PackageDeployService.adjustDeployOptions(PackageDeployService.java:313)
+	at com.salesforce.ide.core.services.PackageDeployService.deployWork(PackageDeployService.java:277)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:156)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:139)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:124)
+	at com.salesforce.ide.ui.actions.SaveToServerActionController.deploy(SaveToServerActionController.java:136)
+	at com.salesforce.ide.ui.actions.SaveToServerActionController.saveResourcesToServer(SaveToServerActionController.java:121)
+	at com.salesforce.ide.ui.handlers.SaveToServerHandler$1.execute(SaveToServerHandler.java:78)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:40.241
+!MESSAGE  WARN [2016-03-07 18:16:40,240] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:50.298
+!MESSAGE ERROR [2016-03-07 18:16:50,298] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:34) - ForceRemoteException occurred while attempting to perform a metadata operation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:50.308
+!MESSAGE  WARN [2016-03-07 18:16:50,308] (BaseRetryAspect.java:isExceptionRetryable:217) - General evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:50.318
+!MESSAGE ERROR [2016-03-07 18:16:50,318] (PackageManifestFactory.java:createPackageManifest:421) - Generic package manifest created - unable to get enabled object types from username='bhushandevorg@gmail.com', endpoint='https://ap2.salesforce.com/services/Soap/u/36.0/00D28000001Ej5e', orgid='00D28000001Ej5eEAC', conn timeout=400 secs, read timeout=400 secs
+
+!STACK 0
+com.salesforce.ide.core.remote.ForceRemoteException: com.sforce.ws.ConnectionException: Failed to send request to https://ap2.salesforce.com/services/Soap/m/36.0/00D28000001Ej5e
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.throwTranslatedException(ForceExceptionUtils.java:357)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:254)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:261)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$FastClassByCGLIB$$9404e285.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.MetadataOperationsRetryAspect.metadataOperationsRetry(MetadataOperationsRetryAspect.java:32)
+	at sun.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$EnhancerByCGLIB$$227e017e.describeMetadata(<generated>)
+	at com.salesforce.ide.core.services.MetadataService.getDescribeMetadata(MetadataService.java:61)
+	at com.salesforce.ide.core.services.MetadataService.getEnabledComponentTypes(MetadataService.java:150)
+	at com.salesforce.ide.core.services.MetadataService.getEnabledComponentTypes(MetadataService.java:139)
+	at com.salesforce.ide.core.services.MetadataService.getEnabledComponentTypes(MetadataService.java:134)
+	at com.salesforce.ide.core.factories.PackageManifestFactory.createPackageManifest(PackageManifestFactory.java:407)
+	at com.salesforce.ide.core.factories.PackageManifestFactory.getDefaultPackageManifest(PackageManifestFactory.java:182)
+	at com.salesforce.ide.core.factories.PackageManifestFactory.getPackageManifest(PackageManifestFactory.java:157)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrieveSelective(PackageRetrieveService.java:637)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrieveSelective(PackageRetrieveService.java:533)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrieveSelective(PackageRetrieveService.java:514)
+	at com.salesforce.ide.core.services.ProjectService.isFileInSync(ProjectService.java:2584)
+	at com.salesforce.ide.core.services.ProjectService.isResourceInSync(ProjectService.java:2457)
+	at com.salesforce.ide.ui.actions.ActionController$1.run(ActionController.java:242)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: com.sforce.ws.ConnectionException: Failed to send request to https://ap2.salesforce.com/services/Soap/m/36.0/00D28000001Ej5e
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:121)
+	at com.sforce.soap.metadata.MetadataConnection.describeMetadata(MetadataConnection.java:491)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:252)
+	... 34 more
+Caused by: java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	... 36 more
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:50.350
+!MESSAGE  WARN [2016-03-07 18:16:50,350] (ActionController.java:syncCheck:198) - Unable to perform sync check: An unexpected error has occurred. Please try again, or check the log file for details.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:57.122
+!MESSAGE  WARN [2016-03-07 18:16:57,122] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:57.150
+!MESSAGE  WARN [2016-03-07 18:16:57,150] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:57.176
+!MESSAGE ERROR [2016-03-07 18:16:57,175] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:34) - ForceRemoteException occurred while attempting to perform a metadata operation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:16:57.182
+!MESSAGE  WARN [2016-03-07 18:16:57,181] (BaseRetryAspect.java:isExceptionRetryable:217) - General evaluation deemed exception not retry-able:
+ UnknownHostException: ap2.salesforce.com
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:57.188
+!MESSAGE ERROR [2016-03-07 18:16:57,187] (PackageDeployService.java:deployWork:303) - Unable to retrieve components: UnknownHostException: ap2.salesforce.com
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:16:57.195
+!MESSAGE ERROR [2016-03-07 18:16:57,194] (SaveToServerHandler.java:fetchRemoteComponents:109) - Unable to save resource(s)
+
+!STACK 0
+java.net.UnknownHostException: ap2.salesforce.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.sforce.ws.transport.JdkHttpTransport.connectRaw(JdkHttpTransport.java:136)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:100)
+	at com.sforce.ws.transport.JdkHttpTransport.connectLocal(JdkHttpTransport.java:95)
+	at com.sforce.ws.transport.JdkHttpTransport.connect(JdkHttpTransport.java:91)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:95)
+	at com.sforce.soap.metadata.MetadataConnection.describeMetadata(MetadataConnection.java:491)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:252)
+	at com.salesforce.ide.core.remote.MetadataStubExt.describeMetadata(MetadataStubExt.java:261)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$FastClassByCGLIB$$9404e285.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.MetadataOperationsRetryAspect.metadataOperationsRetry(MetadataOperationsRetryAspect.java:32)
+	at sun.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.MetadataStubExt$$EnhancerByCGLIB$$227e017e.describeMetadata(<generated>)
+	at com.salesforce.ide.core.services.MetadataService.getDescribeMetadata(MetadataService.java:61)
+	at com.salesforce.ide.core.services.PackageDeployService.adjustDeployOptions(PackageDeployService.java:313)
+	at com.salesforce.ide.core.services.PackageDeployService.deployWork(PackageDeployService.java:277)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:156)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:139)
+	at com.salesforce.ide.core.services.PackageDeployService.deploy(PackageDeployService.java:124)
+	at com.salesforce.ide.ui.actions.SaveToServerActionController.deploy(SaveToServerActionController.java:136)
+	at com.salesforce.ide.ui.actions.SaveToServerActionController.saveResourcesToServer(SaveToServerActionController.java:121)
+	at com.salesforce.ide.ui.handlers.SaveToServerHandler$1.execute(SaveToServerHandler.java:78)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:17:17.932
+!MESSAGE  WARN [2016-03-07 18:17:17,919] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 4 0 2016-03-07 18:17:21.679
+!MESSAGE ERROR [2016-03-07 18:17:21,679] (ProjectPackageList.java:generateComponents:483) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:17:24.180
+!MESSAGE  WARN [2016-03-07 18:17:24,180] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:17:24.215
+!MESSAGE  WARN [2016-03-07 18:17:24,213] (ProjectPackage.java:addComponentsToZip:491) - File 'C:\workspace\SoqlandSosl\src\package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:17:27.095
+!MESSAGE  WARN [2016-03-07 18:17:27,095] (ProjectService.java:handleDeployResult:1917) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:17:27.105
+!MESSAGE  WARN [2016-03-07 18:17:27,105] (ComponentResource.java:loadFromFile:432) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2016-03-07 18:17:27.141
+!MESSAGE  WARN [2016-03-07 18:17:27,140] (ProjectService.java:handleRetrieveResult:2087) - Nothing to save to project - retrieve result is empty
+
