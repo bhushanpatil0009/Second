@@ -6,7 +6,9 @@ public class AbstractTest
    	  integer two = 10;
    
    integer result = one + two;
+   
    system.debug('Result is : ' +result);
-    
+    system.debug('Result is : ' +result);
+    system.debug('Result is : ' +result);
     }
 }    
